@@ -1,7 +1,7 @@
 import sys, os
 sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), '..')))
 
-from app.math_utils import add, multiply
+from math_utils import add, multiply
 
 def test_add():
     assert add(2, 3) == 5
