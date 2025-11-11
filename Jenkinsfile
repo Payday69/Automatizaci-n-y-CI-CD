@@ -16,7 +16,7 @@ pipeline {
                 echo 'Ejecutando pruebas unitarias con unittest...'
                 // 🛑 IMPORTANTE: Cambiamos 'sh' por 'bat'
                 // Este comando ejecuta tus pruebas unitarias de Python.
-                bat 'python -m unittest test_math_utils test_string_utils'
+                bat 'python test_math_utils.py && python test_string_utils.py'
             }
         }
         
